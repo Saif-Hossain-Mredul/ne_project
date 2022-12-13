@@ -33,7 +33,15 @@ class PortInput extends StatelessWidget {
                 keyboardType: TextInputType.number,
               ),
             ],
-          )
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          const Text('Enter port'),
+          const TextField(
+            keyboardType: TextInputType.number,
+            decoration: InputDecoration(hintText: 'Username'),
+          ),
         ],
       ),
     );
