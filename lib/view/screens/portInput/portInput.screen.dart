@@ -7,40 +7,63 @@ class PortInput extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Column(
-        children: [
-          const Text('Enter the ip address of server'),
-          const SizedBox(
-            height: 20,
-          ),
-          Row(
-            children: const [
-              TextField(
-                keyboardType: TextInputType.number,
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text('Enter the ip address of server', style: TextStyle(fontSize: 20),),
+              const SizedBox(
+                height: 20,
               ),
-              Text('.'),
-              TextField(
-                keyboardType: TextInputType.number,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: const [
+                  SizedBox(
+                    width: 75,
+                    child: TextField(
+                      keyboardType: TextInputType.number,
+                    ),
+                  ),
+                  Text('.'),
+                   SizedBox(
+                    width: 75,
+                    child: TextField(
+                      keyboardType: TextInputType.number,
+                    ),
+                  ),
+                  Text('.'),
+                  SizedBox(
+                    width: 75,
+                    child: TextField(
+                      keyboardType: TextInputType.number,
+                    ),
+                  ),
+                  Text('.'),
+                   SizedBox(
+                    width: 75,
+                    child: TextField(
+                      keyboardType: TextInputType.number,
+                    ),
+                  ),
+                ],
               ),
-              Text('.'),
-              TextField(
-                keyboardType: TextInputType.number,
+              const SizedBox(
+                height: 20,
               ),
-              Text('.'),
-              TextField(
-                keyboardType: TextInputType.number,
+              const Text('Enter port', style: TextStyle(fontSize: 20)),
+              const SizedBox(
+                width: 150,
+                child: TextField(
+                  keyboardType: TextInputType.number,
+                  decoration: InputDecoration(hintText: '3000'),
+                ),
               ),
             ],
           ),
-          const SizedBox(
-            height: 20,
-          ),
-          const Text('Enter port'),
-          const TextField(
-            keyboardType: TextInputType.number,
-            decoration: InputDecoration(hintText: 'Username'),
-          ),
-        ],
+        ),
       ),
     );
   }
