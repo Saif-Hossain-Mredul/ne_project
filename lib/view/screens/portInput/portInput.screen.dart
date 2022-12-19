@@ -14,53 +14,136 @@ class PortInput extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text('Enter the ip address of server', style: TextStyle(fontSize: 20),),
+              const Text(
+                'Enter the ip address of server',
+                style: TextStyle(fontSize: 20),
+              ),
               const SizedBox(
-                height: 20,
+                height: 15,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: const [
+                children: [
                   SizedBox(
                     width: 75,
                     child: TextField(
+                      textAlign: TextAlign.center,
                       keyboardType: TextInputType.number,
+                      decoration: InputDecoration(
+                        hintText: '3000',
+                        contentPadding: const EdgeInsets.symmetric(
+                            horizontal: 0, vertical: 15),
+                        border: OutlineInputBorder(
+                          borderSide: const BorderSide(
+                            width: 2,
+                            color: Colors.lightBlueAccent,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
                     ),
                   ),
-                  Text('.'),
-                   SizedBox(
-                    width: 75,
-                    child: TextField(
-                      keyboardType: TextInputType.number,
-                    ),
-                  ),
-                  Text('.'),
+                  const Text('.', style: TextStyle(fontSize: 20)),
                   SizedBox(
                     width: 75,
                     child: TextField(
+                      textAlign: TextAlign.center,
                       keyboardType: TextInputType.number,
+                      decoration: InputDecoration(
+                        hintText: '3000',
+                        contentPadding:
+                            EdgeInsets.symmetric(horizontal: 0, vertical: 15),
+                        border: OutlineInputBorder(
+                          borderSide: const BorderSide(
+                            width: 2,
+                            color: Colors.lightBlueAccent,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
                     ),
                   ),
-                  Text('.'),
-                   SizedBox(
+                  const Text('.', style: TextStyle(fontSize: 20)),
+                  SizedBox(
                     width: 75,
                     child: TextField(
+                      textAlign: TextAlign.center,
                       keyboardType: TextInputType.number,
+                      decoration: InputDecoration(
+                        hintText: '3000',
+                        contentPadding:
+                            EdgeInsets.symmetric(horizontal: 0, vertical: 15),
+                        border: OutlineInputBorder(
+                          borderSide: const BorderSide(
+                            width: 2,
+                            color: Colors.lightBlueAccent,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                    ),
+                  ),
+                  const Text('.', style: TextStyle(fontSize: 20)),
+                  SizedBox(
+                    width: 75,
+                    child: TextField(
+                      textAlign: TextAlign.center,
+                      keyboardType: TextInputType.number,
+                      decoration: InputDecoration(
+                        hintText: '3000',
+                        contentPadding:
+                            EdgeInsets.symmetric(horizontal: 0, vertical: 15),
+                        border: OutlineInputBorder(
+                          borderSide: const BorderSide(
+                            width: 2,
+                            color: Colors.lightBlueAccent,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
                     ),
                   ),
                 ],
               ),
               const SizedBox(
-                height: 20,
+                height: 40,
               ),
               const Text('Enter port', style: TextStyle(fontSize: 20)),
               const SizedBox(
+                height: 15,
+              ),
+              SizedBox(
                 width: 150,
                 child: TextField(
+                  textAlign: TextAlign.center,
                   keyboardType: TextInputType.number,
-                  decoration: InputDecoration(hintText: '3000'),
+                  decoration: InputDecoration(
+                    hintText: '3000',
+                    contentPadding:
+                        EdgeInsets.symmetric(horizontal: 0, vertical: 15),
+                    border: OutlineInputBorder(
+                      borderSide: const BorderSide(
+                        width: 2,
+                        color: Colors.lightBlueAccent,
+                      ),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
                 ),
               ),
+              const SizedBox(
+                height: 20,
+              ),
+              TextButton(
+                style: TextButton.styleFrom(
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.lightBlueAccent,
+                    minimumSize: Size(150, 40)),
+                onPressed: () {
+                  print('Pressed');
+                },
+                child: const Text('Go!'),
+              )
             ],
           ),
         ),
