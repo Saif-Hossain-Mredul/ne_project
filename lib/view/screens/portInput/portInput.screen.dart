@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:ne_project/view/screens/home/home.screen.dart';
 
 class PortInput extends StatelessWidget {
-  const PortInput({super.key});
+  PortInput({super.key});
+  TextEditingController ipEditingController1 = TextEditingController();
+  TextEditingController ipEditingController2 = TextEditingController();
+  TextEditingController ipEditingController3 = TextEditingController();
+  TextEditingController ipEditingController4 = TextEditingController();
+  TextEditingController portEditingController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +33,7 @@ class PortInput extends StatelessWidget {
                   SizedBox(
                     width: 75,
                     child: TextField(
+                      controller: ipEditingController1,
                       textAlign: TextAlign.center,
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
@@ -47,6 +54,7 @@ class PortInput extends StatelessWidget {
                   SizedBox(
                     width: 75,
                     child: TextField(
+                      controller: ipEditingController2,
                       textAlign: TextAlign.center,
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
@@ -67,6 +75,7 @@ class PortInput extends StatelessWidget {
                   SizedBox(
                     width: 75,
                     child: TextField(
+                      controller: ipEditingController3,
                       textAlign: TextAlign.center,
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
@@ -87,6 +96,7 @@ class PortInput extends StatelessWidget {
                   SizedBox(
                     width: 75,
                     child: TextField(
+                      controller: ipEditingController4,
                       textAlign: TextAlign.center,
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
@@ -115,6 +125,7 @@ class PortInput extends StatelessWidget {
               SizedBox(
                 width: 150,
                 child: TextField(
+                  controller: portEditingController,
                   textAlign: TextAlign.center,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
@@ -140,7 +151,18 @@ class PortInput extends StatelessWidget {
                     backgroundColor: Colors.lightBlueAccent,
                     minimumSize: Size(150, 40)),
                 onPressed: () {
-                  print('Pressed');
+                  final String ipAddress =
+                      '${ipEditingController1.text}.${ipEditingController2.text}.${ipEditingController3.text}.${ipEditingController4.text}:${portEditingController.text}';
+
+                  print(ipAddress);
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: ((context) => HomePage(
+                            ipAddress: ipAddress,
+                          )),
+                    ),
+                  );
                 },
                 child: const Text('Go!'),
               )
