@@ -13,7 +13,7 @@ class SensorData {
   late final List<double> row_3;
   late final List<double> row_4;
   late final List<double> row_5;
-  late final List<double> data;
+  late final List<double> data = [];
   
   SensorData.fromJson(Map<String, dynamic> json){
     row_0 = List.castFrom<dynamic, double>(json['row_0']);
