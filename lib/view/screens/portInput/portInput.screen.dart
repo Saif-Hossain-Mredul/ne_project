@@ -37,7 +37,7 @@ class PortInput extends StatelessWidget {
                       textAlign: TextAlign.center,
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
-                        hintText: '3000',
+                        hintText: '192',
                         contentPadding: const EdgeInsets.symmetric(
                             horizontal: 0, vertical: 15),
                         border: OutlineInputBorder(
@@ -58,7 +58,7 @@ class PortInput extends StatelessWidget {
                       textAlign: TextAlign.center,
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
-                        hintText: '3000',
+                        hintText: '168',
                         contentPadding:
                             EdgeInsets.symmetric(horizontal: 0, vertical: 15),
                         border: OutlineInputBorder(
@@ -79,7 +79,7 @@ class PortInput extends StatelessWidget {
                       textAlign: TextAlign.center,
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
-                        hintText: '3000',
+                        hintText: '0',
                         contentPadding:
                             EdgeInsets.symmetric(horizontal: 0, vertical: 15),
                         border: OutlineInputBorder(
@@ -100,7 +100,7 @@ class PortInput extends StatelessWidget {
                       textAlign: TextAlign.center,
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
-                        hintText: '3000',
+                        hintText: '103',
                         contentPadding:
                             EdgeInsets.symmetric(horizontal: 0, vertical: 15),
                         border: OutlineInputBorder(
@@ -129,7 +129,7 @@ class PortInput extends StatelessWidget {
                   textAlign: TextAlign.center,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
-                    hintText: '3000',
+                    hintText: '8080',
                     contentPadding:
                         EdgeInsets.symmetric(horizontal: 0, vertical: 15),
                     border: OutlineInputBorder(
