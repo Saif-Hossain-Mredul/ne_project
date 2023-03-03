@@ -1,9 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:ne_project/view/screens/portInput/portInput.screen.dart';
+import 'package:window_manager/window_manager.dart';
 
 import 'view/screens/home/home.screen.dart';
 
-void main() {
+void main() async {
+
+  // WidgetsFlutterBinding.ensureInitialized();
+  // await windowManager.ensureInitialized();
+
+  // WindowOptions windowOptions = const WindowOptions(
+  //   title: "NE Project",
+  //   minimumSize: Size(800, 600),
+  //   maximumSize: Size(800, 600),
+  //   size: Size(800, 600),
+  //   center: true,
+  //   fullScreen: false,
+  //   backgroundColor: Colors.transparent,
+  //   skipTaskbar: false,
+  //   titleBarStyle: TitleBarStyle.normal,
+  // );
+  
+  // windowManager.waitUntilReadyToShow(windowOptions, () async {
+  //   await windowManager.show();
+  //   await windowManager.focus();
+  // });
+
   runApp(const MyApp());
 }
 
