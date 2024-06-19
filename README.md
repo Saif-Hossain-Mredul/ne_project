@@ -1,0 +1,6 @@
+# Solid state real-time radiation positioning system
+In many cases, it is necessary to monitor the location of radioactivity in an area or Hotspots rather than the amount of radiation itself. At present, there is only a few systems that can visually detect radiation from a distant location. Moreover, it is necessary to monitor the radiation level in real time to observe the path of the radioactive element in the human body. The Solid state real-time radiation positioning system achieves these feats by using solid-state radiation detectors placed in a grid or in an array. The sensory elements create a pulse or an analog signal when an incident radioactive particle hits a sensory element. The characteristics of the pulse is then measured and transferred to the server wirelessly. The data is then processed and shown on a display where we can see the shape, size, and movement of a radioactive source element within some finite space. Since the availability of solid-state crystals was not found, we simulated the idea using light-dependent resistors which would detect visible light that is taken as an equivalent to the radiation in this project.
+
+***The following image shows the result from demonstration:***
+
+![Screenshot 2024-06-20 000307](https://github.com/Saif-Hossain-Mredul/ne_project/assets/69457175/2937e071-ae0b-4c31-b600-aef68e82fa5c)
